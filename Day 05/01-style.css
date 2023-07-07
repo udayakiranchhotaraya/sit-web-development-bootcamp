@@ -1,0 +1,12 @@
+/* selector {
+            property: value;
+        } */
+        h2 {
+            color: red; 
+            background-color: aqua; 
+            font-size: 25px; 
+            text-align: center;
+        }
+        p {
+            background-color: chartreuse
+        }

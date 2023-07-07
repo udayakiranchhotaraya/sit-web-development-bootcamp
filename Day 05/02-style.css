@@ -1,0 +1,45 @@
+/* Element Selector */
+h3 {
+    color: red;
+    /* text-align: center; */
+}
+
+/* ID Selector */
+#idSelector {
+    color: blueviolet;
+    /* text-align: center; */
+}
+
+/* Class Selector */
+.classSelector {
+    color: blue;
+    /* text-align: center; */
+}
+
+/* Universal Selector */
+* {
+    text-align: center;
+}
+
+/* Group Selector */
+/* h4 {
+    color: darkblue;
+    text-align: right;
+}
+p {
+    color: darkblue;
+    text-align: right;
+} */
+/* changes to */
+h4, p {
+    color: darkblue;
+    text-align: right;
+}
+
+/* Attribute selector */
+input[type="text"] {
+    background-color: aqua;
+}
+input[type="email"],input[type="password"] {
+    background-color: yellow;
+}

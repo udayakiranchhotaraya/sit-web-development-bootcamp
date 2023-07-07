@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders and Background</title>
+    <style>
+        #bg1 {
+            height: 200px;
+            width: 200px;
+            background-color: chartreuse;
+            border: 3px solid black;
+            border-radius: 10%; /* 50% makes circle */
+            text-align: center;
+        }
+        #btn {
+            border-radius: 10%;
+        }
+        #bg2 {
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            background-image: url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F2.bp.blogspot.com%2F-WtdFq_e6eKo%2FTV5W5s-hS-I%2FAAAAAAAAAvM%2FgmCUYOx3bX8%2Fs1600%2FAnimals_Cats_Small_cat_005241_.jpg&f=1&nofb=1&ipt=a87cb6ac8c1d6708dc6ef0e8e266f4a6170059db067c80af3873e80901557cb4&ipo=images');
+            background-repeat: no-repeat;
+        }
+        #bg3 {
+            height: 200px;
+            width: 200px;
+            /* background-image: linear-gradient(red, blue); */
+            /* background-image: radial-gradient(green, yellow); */
+            /* background-image: repeating-linear-gradient(yellow 10%, green 20%); */
+            background-image: repeating-radial-gradient(yellow, green 10%);
+        }
+        #bg4 {
+            width: 350px;
+            height: 200px;
+            background-image: linear-gradient(to bottom, #e88300, #ff8865, #ff9da8, #ffbcdc, #fddcf9, #e9deff, #d3e2ff, #bfe4ff, #62d8f2, #00cac6, #00b77b, #009e07);
+        }
+    </style>
+</head>
+<body>
+    <div id="bg1">
+        <button id="btn">Click me</button>
+    </div>
+    <br>
+    <div id="bg2"></div>
+    <br>
+    <div id="bg3"></div>
+    <br>
+    <div id="bg4"></div>
+</body>
+</html>
