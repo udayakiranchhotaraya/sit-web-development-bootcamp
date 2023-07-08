@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover</title>
+    <style>
+        /* Pseudo specifier */
+        a:hover {
+            color: red;
+        }
+        #btn {
+            /* height: 30px; */
+            width: 100px;
+            background-color: greenyellow;
+            cursor: pointer;
+        }
+        #btn:hover {
+            width: 120px;
+            height: 30px;
+            background-color: green;
+            color: white;
+        }
+        p {
+            display: none;
+        }
+        span:hover+p {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <a href="">Home</a> |
+    <a href="">About us</a> |
+    <a href="">Contact us</a>
+    <hr>
+    <button type="button" value="Click Me" id="btn">Click me</button>
+    <hr>
+    <span>Hover over me to see secret message</span>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, voluptas quibusdam earum quisquam dolorum et sequi sunt repellat nemo cumque eveniet quas? Vero quisquam, culpa cum aut vel quod exercitationem?</p>
+</body>
+</html>
