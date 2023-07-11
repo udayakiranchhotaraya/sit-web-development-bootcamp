@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display: Flex</title>
+    <style>
+        .flex-container {
+            width: 100%;
+            height: 400px;
+            background-color: burlywood;
+            display: flex;
+            flex-direction: row;
+            /* flex-wrap: wrap; */
+            justify-content: start;
+            align-content: end;
+            /* align-items: center; */
+        }
+        /* .flex-container>div {
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+        } */
+        .flex-item {
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">Div1</div>
+        <div class="flex-item">Div2</div>
+        <div class="flex-item">Div3</div>
+    </div>
+</body>
+</html>

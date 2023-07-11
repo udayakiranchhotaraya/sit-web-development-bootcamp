@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform and transitions</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            /* transform: rotate(45deg); */
+            /* transform: translate(100px, 100px); */
+            /* transform: scale(2); */
+        }
+        #div1 {
+            background-color: yellow;
+            transition: width 2s, height 1s/*, transform 2s */;
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 1s;
+        }
+        #div1:hover {
+            width: 200px;
+            height: 200px;
+            /* transform: rotate(360deg); */
+        }
+        #div1::after {
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <br><br><br>
+    <div id="div1"></div>
+</body>
+</html>
