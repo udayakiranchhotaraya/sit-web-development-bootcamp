@@ -4,20 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-in</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="timetable.html">
-        <table>
-            <tr>
-                <td>Username: </td>
-                <td><input type="text" name="" id="" /></td>
-            </tr>
-            <tr>
-                <td>Password: </td>
-                <td><input type="password" name="" id="" /></td>
-            </tr>
-        </table>
-        <button type="submit">Sign-in</button>
-    </form>
+    <nav class="nav">
+        <a href="./home.html" class="">Home</a>
+        <a href="./home.html#about-us" class="">About us</a>
+        <a href="./home.html#contact-us" class="">Contact us</a>
+    </nav>
+    <br><br>
+    <div class="wrapper">
+        <fieldset id="signinFieldset">
+            <legend style="font-size: larger;">&nbsp;Sign-in&ensp;</legend>
+            <form action="timetable.html">
+                <table>
+                    <tr>
+                        <td>Username: </td>
+                        <td><input type="text" name="" id="" /></td>
+                    </tr>
+                    <tr>
+                        <td>Password: </td>
+                        <td><input type="password" name="" id="" /></td>
+                    </tr>
+                </table>
+                <button type="submit">Sign-in</button>
+            </form>
+        </fieldset>
+    </div>
 </body>
 </html>

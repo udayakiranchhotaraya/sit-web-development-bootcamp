@@ -1,0 +1,84 @@
+/* * {
+    color: whitesmoke;
+} */
+
+body {
+    min-height: 100vh;
+    background-color: #F2BE22;
+    background-repeat: no-repeat;
+    color: #210062;
+}
+
+nav {
+    background-color: #22A699;
+    height: 30px;
+    width: 100%;
+    text-align: right;
+}
+
+a {
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+a:hover {
+    color: #FCE22A;
+    text-decoration: underline;
+}
+
+.wrapper {
+    margin: auto;
+    vertical-align: middle;
+}
+
+#detailsFieldset {
+    margin: auto;
+    width: 600px;
+}
+
+#studentDetailsTable, #profilePicture {
+    float: left;
+}
+
+td {
+    padding: 5px;
+}
+
+#profilePicture {
+    width: 200px;
+    padding-left: 15px;
+}
+
+#signupFieldset {
+    width: 850px;
+    margin: auto;
+}
+
+#qualificationsTable, .qualificationsCells {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.qualificationsCells {
+    text-align: center;
+}
+
+/* .wrapper-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* input, input[type="checkbox"], select {
+    background-color: #F2BE22;
+    border: 1px solid #210062;
+    border-radius: 2px;
+} */
+
+#signinFieldset {
+    width: 250px;
+    margin: auto;
+}
