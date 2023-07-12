@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output using JS</title>
+</head>
+<body>
+    <p id="p1"></p>
+    <hr>
+    <p id="p2"></p>
+    <hr>
+
+    <script>
+        document.getElementById("p1").innerHTML = "I am paragraph-1";
+
+        const p = document.getElementById("p2");
+        p.innerHTML = "I am paragraph-2";
+
+        document.write("Hello, World!"); //for testing and debugging
+
+        window.alert(23+6);
+
+        window.confirm("Are you sure?")
+
+        console.log("I am in console"); //For testing and debugging
+    </script>
+</body>
+</html>
