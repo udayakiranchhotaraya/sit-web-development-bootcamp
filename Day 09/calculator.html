@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    
+    <script>
+        const operator = prompt("Enter the operation to perform (+, -, *, /): ");
+        const num1 = parseFloat(prompt("Enter the first operand: "));
+        const num2 = parseFloat(prompt("Enter the second operand: "));
+        let result;
+        switch (operator) {
+            case "+":
+                result = num1 + num2;
+                break;
+            case "-":
+                result = num1 - num2;
+                break;
+            case "*":
+                result = num1 * num2;
+                break;
+            case "/":
+                result = num1 / num2;
+                break;
+            default:
+                document.write("Invalid operation + <br>");
+                break;
+        }
+        document.write(`${num1} ${operator} ${num2} = ${result}`);
+    </script>
+</body>
+</html>
