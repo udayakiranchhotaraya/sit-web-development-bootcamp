@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+    <style>
+        #div1 {
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1" onclick="change()"></div>
+    <hr>
+    Name: <input type="text" name="" id="name" /> <br><br>
+    <button onclick="check()">Submit</button>
+    <p id="checkRes"></p>
+    
+    <script>
+        function change() {
+            document.getElementById("div1").style.backgroundColor = "red";
+            // document.getElementById("para1").toggleAttribute("style", "background-color=red"); --wrong
+        }
+
+        function check() {
+            const name = document.getElementById("name").value;
+            if(name.length < 8) {
+                document.getElementById("checkRes").style.color = "red";
+                document.getElementById("checkRes").innerHTML = "Enter atleast 8 characters";
+            }
+            else {
+                document.getElementById("checkRes").innerHTML = "Your name sounds good";
+                document.getElementById("checkRes").style.color = "green";
+            }
+        }
+    </script>
+</body>
+</html>

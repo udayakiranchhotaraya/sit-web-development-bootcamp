@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <p>Status: <span id="status">Online</span></p><br>
+    Enter your message: <textarea name="" id="message" cols="23" rows="6" onkeydown="statusTyping()" onkeyup="statusOnline()"></textarea>
+    <hr>
+    Password: <input type="password" id="pass">
+    <input type="button" value="SHOW" id="btn" onclick="showHide()">
+    <hr>
+    <img src="./poster_family_left.png" alt="livery" id="car" width="30%" onmouseover="big()" onmouseout="small()">
+
+    <script>
+        function statusTyping() {
+            document.getElementById("status").innerHTML = "typing...";
+        }
+
+        function statusOnline() {
+            document.getElementById("status").innerHTML = "Online";
+        }
+
+        function showHide() {
+            var btn = document.getElementById("btn");
+            var pass = document.getElementById("pass");
+            // if (btn.value == 'SHOW') {
+            //     pass.type = "text";
+            //     btn.value = 'HIDE';
+            // } else {
+            //     pass.type = "password";
+            //     btn.value = 'SHOW';
+            // }
+            pass.toggleAttribute(type)
+        }
+
+        // Using onmouseover
+        function big() {
+            var img = document.getElementById("car");
+            img.style.width = "100%";
+        }
+
+        // Using onmouseout
+        function small() {
+            var img = document.getElementById("car");
+            img.style.width = "30%";
+        }
+
+        document.getElementById("car").addEventListener("click", buttonClick);
+
+        
+    </script>
+</body>
+</html>

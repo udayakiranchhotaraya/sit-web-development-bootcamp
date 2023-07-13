@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Detector</title>
+</head>
+<body>
+    Enter a character: <input type="text" id="character" onkeyup="check(event)">
+    <!-- <button id="btn" onclick="check()">CHECK</button> -->
+    <p id="res"></p>
+
+    <script>
+        function check(event) {
+            
+            // const character = document.getElementById("character").value;
+            // if (character >= "a" && character <= "z") {
+            //     document.getElementById("res").innerHTML = "Alphabet";
+            // } else if (character >= "0" && character <= "9") {
+            //     document.getElementById("res").innerHTML = "Number";
+            // } else {
+            //     document.getElementById("res").innerHTML = "";
+            // }
+
+            // const key = event.keyCode; --> deprecated
+            const key = event.code;
+            document.getElementById("res").innerHTML = key;
+        }
+    </script>
+</body>
+</html>
