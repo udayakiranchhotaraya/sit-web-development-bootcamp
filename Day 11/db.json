@@ -1,0 +1,27 @@
+{
+    "user": [
+        {
+            "id": 1,
+            "name": {
+                "firstname": "John",
+                "lastname": "Doe"
+            },
+            "email": "john@mail.com"
+        },
+        {
+            "id": 2,
+            "name": {
+                "firstname": "Jane",
+                "lastname": "Doe"
+            },
+            "email":"jane@mail.com"
+        }
+    ],
+    "admin": [
+        {
+            "id": 1,
+            "name": "admin",
+            "email": "admin@mail.com"
+        }
+    ]
+}
