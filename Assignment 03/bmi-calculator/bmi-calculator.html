@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="./bmi-calculator.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <script src="./bmi-calculator.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="card text-center">
+            <div class="card-header" style="font-size: larger; font-weight: 623;">
+                <span style="display: inline-flex; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">BMI Calculator</span>
+            </div>
+            <div class="card-body">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="nav-metric-tab" data-bs-toggle="tab" data-bs-target="#nav-metric" type="button" role="tab" aria-controls="nav-metric" aria-selected="true">Metric</button>
+                        <button class="nav-link" id="nav-imperial-tab" data-bs-toggle="tab" data-bs-target="#nav-imperial" type="button" role="tab" aria-controls="nav-imperial" aria-selected="false">Imperial</button>
+                    </div>
+                  </nav>
+                  <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-metric" role="tabpanel" aria-labelledby="nav-metric-tab" tabindex="0">
+                            <div class="inputs">
+                                <div class="mb-3">
+                                    <label for="height-cm" class="form-label">Height: </label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="height-cm" required="true"/>
+                                        <span class="input-group-text" id="basic-addon3">cm</span>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="weight-cm" class="form-label">Weight: </label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="weight-kg" required="true"/>
+                                        <span class="input-group-text" id="basic-addon3">kg</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary" id="calculate-imperial" onclick="evaluateByMetric()">Evaluate</button>
+                        </div>
+                        <div class="tab-pane fade" id="nav-imperial" role="tabpanel" aria-labelledby="nav-imperial-tab" tabindex="1">
+                            <div class="inputs">
+                                <div class="mb-3">
+                                    <label for="height-ft-in" class="form-label">Height: </label>
+                                    <div id="height-ft-in">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" id="height-ft" required>
+                                            <span class="input-group-text" id="basic-addon3">ft</span>
+                                        </div>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" id="height-in" required>
+                                            <span class="input-group-text" id="basic-addon3">in</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="weight-cm" class="form-label">Weight: </label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="weight-lb">
+                                        <span class="input-group-text" id="basic-addon3">lbs</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary" id="calculate-imperial" onclick="evaluateByImperial()">Evaluate</button>
+                        </div>
+                  </div>
+            </div>
+            <div class="card-footer text-body-secondary">
+                <span style="display: inline-flex; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif"><span class="material-icons">copyright</span>&nbsp; Udaya Kiran Chhotaraya</span>
+            </div>
+        </div>
+        <div id="results" style="display: none;">
+            <div class="alert" id="alert" role="alert">
+                <!-- Your BMI is <b><span id="bmi-score"></span></b>, indicating your weight is in the <b><span id="weight-category"></span></b> category for adults of your height. -->
+            </div>
+            <table class="table table-bordered">
+                <thead>
+                    <th>BMI Score</th>
+                    <th>Weight Status</th>
+                </thead>
+                <tbody>
+                    <tr id="uw" class="table-inactive">
+                        <td>Below 18.5</td>
+                        <td>Underweight</td>
+                    </tr>
+                    <tr id="hw" class="table-inactive">
+                        <td>18.5 - 24.9</td>
+                        <td>Healthy Weight</td>
+                    </tr>
+                    <tr id="ow" class="table-inactive">
+                        <td>25.0 - 29.9</td>
+                        <td>Overweight</td>
+                    </tr>
+                    <tr id="ob" class="table-inactive">
+                        <td>30.0 and Above</td>
+                        <td>Obese</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
