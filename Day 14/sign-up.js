@@ -13,6 +13,32 @@ signUpForm.addEventListener('submit', (event) => {
     }
 
     fetch("http://localhost:3000/users", {
+        method: 'GET'
+    })
+    .then(response => response.json())
+    .then(data => {
+        // console.log(username);
+        const isUsernameTaken = data.find((element) => 
+            element.username === username
+        );
+        if (isUsernameTaken) {
+            // const doesUserExist = data.find((element) =>
+            //     element.name === name
+            // );
+            // if (doesUserExist) {
+            //     alert("User already exist!!");
+            // } else {
+                alert("Username already taken. Please try something different.");
+            // }
+        } else {
+            addNewUser(newUser);
+        }
+    })
+    
+})
+
+function addNewUser(newUser) {
+    fetch("http://localhost:3000/users", {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -24,4 +50,4 @@ signUpForm.addEventListener('submit', (event) => {
         console.log("New User Created", newUser);
     })
     .catch(error=> console.error(error));
-})
+}

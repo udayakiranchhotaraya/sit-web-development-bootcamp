@@ -5,6 +5,12 @@
       "name": "John Doe",
       "password": "john.pwd",
       "id": 1
+    },
+    {
+      "username": "jane.doe",
+      "name": "Jane Doe",
+      "password": "jane.doe",
+      "id": 2
     }
   ],
   "blogs": [
