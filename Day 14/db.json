@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "username": "john.doe",
+      "name": "John Doe",
+      "password": "john.pwd",
+      "id": 1
+    }
+  ],
+  "blogs": [
+    {
+      "blogTitle": "My First Blog",
+      "blogBody": "Hello, world. This is my first blog.",
+      "id": 1
+    },
+    {
+      "blogTitle": "My Second Blog",
+      "blogBody": "Hehe. I'm back.\n\nThis time there is a paragraph.",
+      "id": 2
+    }
+  ]
+}
