@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <style>
+        td {padding: 5px;}
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav">
+        <a href="./home.html" class="">Home</a>
+        <a href="./home.html#about-us" class="">About us</a>
+        <a href="./home.html#contact-us" class="">Contact us</a>
+    </nav>
+    <br><br>
+    <h2 style="text-align: center;">Register yourself now!!</h2>
+    <fieldset id="signupFieldset" style="width: 40vw; text-align: center;">
+        <legend style="font-size: larger;">&nbsp;Sign-up&ensp;</legend>
+        <form id="sign-up-form" style="text-align: center;">
+            <table>
+                <tr>
+                    <td>Enter your username: </td>
+                    <td><input type="text" id="username" required></td>
+                </tr>
+                <tr>
+                    <td>Enter your name: </td>
+                    <td><input type="text" id="name" required></td>
+                </tr>
+                <tr>
+                    <td>Enter password: </td>
+                    <td><input type="password" id="password" required></td>
+                </tr>
+            </table>
+            <br>
+            <button type="submit">Submit</button>&ensp;<button type="reset">Clear form</button>
+        </form>
+    </fieldset>
+    <br><br>
+
+    <script src="./sign-up.js"></script>
+</body>
+</html>
